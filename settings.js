@@ -15,7 +15,7 @@ const autostatusAutoReplyStatus = process.env.AUTOREPLY_STATUS || 'true';
 const autostatusStatusReplyText = process.env.STATUS_REPLY_TEXT || '✅*Status Viewed By 𝐌𝐀𝐑𝐂-𝐌𝐃 Whatsapp Bot*';
 const autostatusStatusLikeEmojis = process.env.STATUS_LIKE_EMOJIS || '💛,❤️,💜,🤍,💙';
 
-const botPrefix = process.env.PREFIX || "-";
+const botPrefix = process.env.PREFIX || ".";
 const botAuthor = process.env.AUTHOR || "𝐀𝐫𝐬𝐥𝐚𝐧 𝐂𝐡𝐚𝐮𝐝𝐡𝐚𝐫𝐲 👑";
 const botUrl = process.env.BOT_PIC || "https://files.catbox.moe/qyogy8.jpg";
 const botGurl = process.env.BOT_GURL || "https://whatsapp.com/channel/0029Vat4TFC0QeaoLURbP61u";
