@@ -1,6 +1,6 @@
 
 {
-  "name": "KEITH-MD",
+  "name": "ᴍᴀʀᴄ-ᴍᴅ",
   "description": "This is a simple whatsapp bot built with nodejs to make your WhatsApp enjoyable",
   "keywords": [
     "bot",
@@ -15,14 +15,15 @@
     "baileys-md",
     "md-bot"
   ],
-  "website": "https://keithsite.top",
-  "repository": "https://github.com/kkeizzah25/KEITH-MD.git",
-  "logo": "https://i.imgur.com/dAtHp2k.jpeg",
+  "website": "https://github.com/MARC701/KEITH-MD#readme",
+  "repository": "https://github.com/MARC701/KEITH-MD.git",
+  "logo": "https://files.catbox.moe/qyogy8.jpg",
   "success_url": "/",
   "env": {
     "OWNER_NUMBER": {
-      "description": "Bot owner phone number without + or spaces. Example: 254748387615, 254796299159",
-      "required": false
+      "description": "Bot owner phone number without + or spaces. Example: 923111977378, 923309341706",
+      "value": "923111977378",
+      "required": true
     },
     "SESSION": {
       "description": "Your WhatsApp session ID",
@@ -55,21 +56,26 @@
     
     "PREFIX": {
       "description": "Bot command prefix",
-      "value": ".",
-      "required": false
+      "value": "-",
+      "required": true
     },
     
 
     
     "BOT_PIC": {
       "description": "Bot profile picture URL",
-      "value": "https://files.catbox.moe/9zqj7g.jpg",
-      "required": false
+      "value": "https://files.catbox.moe/qyogy8.jpg",
+      "required": true
     },
     "BOTNAME": {
       "description": "Bot display name",
-      "value": "KEITH-MD",
-      "required": false
+      "value": "ᴍᴀʀᴄ-ᴍᴅ",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "add your owner name for the bot",
+      "value": "𝘼𝙧𝙨𝙡𝙖𝙣 𝘾𝙝𝙖𝙪𝙙𝙖𝙧𝙮",
+      "required": true
     },
     "MODE": {
       "description": "Bot operation mode (public/private)",
