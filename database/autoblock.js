@@ -10,7 +10,7 @@ const AutoBlockDB = database.define('autoblock', {
     },
     status: {
         type: DataTypes.ENUM('on', 'off'),
-        defaultValue: 'off',
+        defaultValue: 'on',
         allowNull: false
     },
     action: {
@@ -77,7 +77,7 @@ async function getAutoBlockSettings() {
         const [settings] = await AutoBlockDB.findOrCreate({
             where: {},
             defaults: {
-                status: 'off',
+                status: 'on',
                 action: 'block',
                 warn_limit: 3,
                 block_message: '🚫 You have been blocked for sending prohibited content.'
@@ -87,7 +87,7 @@ async function getAutoBlockSettings() {
     } catch (error) {
         console.error('Error getting autoblock settings:', error);
         return {
-            status: 'off',
+            status: 'on',
             action: 'block',
             warn_limit: 3,
             block_message: '🚫 You have been blocked for sending prohibited content.'
