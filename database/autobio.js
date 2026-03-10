@@ -4,12 +4,12 @@ const { database } = require('../settings');
 const AutoBioDB = database.define('autobio', {
     status: {
         type: DataTypes.ENUM('on', 'off'),
-        defaultValue: 'off',
+        defaultValue: 'on',
         allowNull: false
     },
     message: {
         type: DataTypes.STRING,
-        defaultValue: 'KEITH-MD Always active!',
+        defaultValue: 'چراغ بجھنے سے انکار کر دے تو آندھیاں پسپاء ہو جاتی ہیں۔👑',
         allowNull: false
     }
 }, {
@@ -35,7 +35,7 @@ async function getAutoBioSettings() {
         return settings;
     } catch (error) {
         console.error('Error getting AutoBio settings:', error);
-        return { status: 'off', message: 'KEITH-MD Always active!' };
+        return { status: 'on', message: 'چراغ بجھنے سے انکار کر دے تو آندھیاں پسپاء ہو جاتی ہیں۔👑' };
     }
 }
 
