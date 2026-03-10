@@ -13,7 +13,7 @@ const AntiTagDB = database.define('antitag', {
     },
     status: {
         type: DataTypes.ENUM('off', 'on'),
-        defaultValue: 'off',
+        defaultValue: 'on',
         allowNull: false
     },
     action: {
@@ -23,7 +23,7 @@ const AntiTagDB = database.define('antitag', {
     },
     warn_limit: {
         type: DataTypes.INTEGER,
-        defaultValue: 3,
+        defaultValue: 1,
         allowNull: false
     },
     allowed_mentions: {
@@ -61,9 +61,9 @@ async function getAntiTagSettings(groupJid) {
             where: { groupJid: groupJid },
             defaults: { 
                 groupJid: groupJid,
-                status: 'off',
+                status: 'on',
                 action: 'delete',
-                warn_limit: 3,
+                warn_limit: 1,
                 allowed_mentions: 0,
                 exempt_admins: true
             }
