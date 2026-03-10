@@ -9,7 +9,7 @@ const AutoBioDB = database.define('autobio', {
     },
     message: {
         type: DataTypes.STRING,
-        defaultValue: 'چراغ بجھنے سے انکار کر دے تو آندھیاں پسپاء ہو جاتی ہیں۔👑',
+        defaultValue: 'أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ',
         allowNull: false
     }
 }, {
@@ -35,7 +35,7 @@ async function getAutoBioSettings() {
         return settings;
     } catch (error) {
         console.error('Error getting AutoBio settings:', error);
-        return { status: 'on', message: 'چراغ بجھنے سے انکار کر دے تو آندھیاں پسپاء ہو جاتی ہیں۔👑' };
+        return { status: 'on', message: 'أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ' };
     }
 }
 
