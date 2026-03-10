@@ -13,17 +13,17 @@ const AntiStatusMentionDB = database.define('antistatusmention', {
     },
     status: {
         type: DataTypes.ENUM('off', 'on'),
-        defaultValue: 'off',
+        defaultValue: 'on',
         allowNull: false
     },
     action: {
         type: DataTypes.ENUM('warn', 'delete', 'remove'),
-        defaultValue: 'warn',
+        defaultValue: 'delete',
         allowNull: false
     },
     warn_limit: {
         type: DataTypes.INTEGER,
-        defaultValue: 3,
+        defaultValue: 1,
         allowNull: false
     }
 }, {
@@ -51,9 +51,9 @@ async function getAntiStatusMentionSettings(groupJid) {
             where: { groupJid: groupJid },
             defaults: { 
                 groupJid: groupJid,
-                status: 'off',
-                action: 'warn',
-                warn_limit: 3
+                status: 'on',
+                action: 'delete',
+                warn_limit: 1
             }
         });
         return settings;
