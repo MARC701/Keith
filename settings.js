@@ -12,7 +12,7 @@ const dev = process.env.OWNER_NUMBER || '923111977378';
 const autostatusAutoviewStatus = process.env.AUTOVIEW_STATUS || 'true';
 const autostatusAutoLikeStatus = process.env.AUTOLIKE_STATUS || 'true';
 const autostatusAutoReplyStatus = process.env.AUTOREPLY_STATUS || 'true';
-const autostatusStatusReplyText = process.env.STATUS_REPLY_TEXT || '✅ Status Viewed By 𝐀𝐫𝐬𝐥𝐚𝐧 𝐂𝐡𝐚𝐮𝐝𝐡𝐚𝐫𝐲 👑';
+const autostatusStatusReplyText = process.env.STATUS_REPLY_TEXT || '✅*Status Viewed By 𝐌𝐀𝐑𝐂-𝐌𝐃 Whatsapp Bot*';
 const autostatusStatusLikeEmojis = process.env.STATUS_LIKE_EMOJIS || '💛,❤️,💜,🤍,💙';
 
 const botPrefix = process.env.PREFIX || "-";
