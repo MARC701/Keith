@@ -56,7 +56,7 @@
     
     "PREFIX": {
       "description": "Bot command prefix",
-      "value": "-",
+      "value": ".",
       "required": true
     },
     
